@@ -14,10 +14,16 @@ export default class galacticAge {
   nextEarthBirthday(){
     return this.futureEarthAge - this.earthYears;
   }
+  pastEarthBirthday(){
+
+  }
   toMercuryAge(){
     this.mercuryYears = parseFloat(((this.earthYears/ .24)).toFixed(1));
     this.mercuryDays = parseFloat((this.mercuryYears * 1.5).toFixed(1));
   }
+  // toVenusAge(){
+    
+  // }
 }
 // class FutureAge extends UserAge{
 //   constructor(age){

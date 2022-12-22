@@ -26,6 +26,11 @@ describe('GalacticAge', () => {
     expect(galacticAge.nextEarthBirthday()).toEqual(22);
   });
 
+  test('it should return the years between past inputted birthday', () =>{
+    galacticAge.pastEarthBirthday(25);
+    expect(galacticAge.pastEarthAge).toEqual(3);
+  });
+
   test('it should return the inputted years from Earth to Mercury years', ()=>{
     galacticAge.toMercuryAge()
     expect(galacticAge.mercuryYears).toEqual(116.7);
@@ -35,6 +40,10 @@ describe('GalacticAge', () => {
     galacticAge.toMercuryAge();
     expect(galacticAge.mercuryDays).toEqual(175.1);
   });
+  // test('it should return the inputted user age from Earth years to Venus Years' , () =>{
+  //   expect(galacticAge.venusYears).toEqual();
+  // });
+
 
 
 });
