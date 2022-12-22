@@ -1,6 +1,7 @@
 
 export default class UserAge {
-  constructor(){
-    
+  constructor(age){
+  this.years = age;
+  this.days = age * 365;
   }
 }
