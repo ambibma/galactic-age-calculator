@@ -20,6 +20,6 @@ describe('UserAge', () => {
 describe('FutureAge', () =>{  
   test('it should return the future inputted age in earth years', ()=>{
     let futureAge = new FutureAge(50);
-    expect(futureAge.years).toEqual(50);
+    expect(futureAge.futureYears).toEqual(50);
   });
 })

@@ -10,7 +10,8 @@ class UserAge {
   
 }
 class FutureAge {
-  constructor(){
-    
+  constructor(futureAge){
+  this.futureYears = futureAge;
+  this.futureDays = futureAge* 365;  
   }
 }
