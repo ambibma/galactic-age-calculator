@@ -1,29 +1,29 @@
 
-import UserAge from "../src/earth";
+import GalacticAge from "../src/earth";
 
-describe('UserAge', () => {
-  let userAge;
+describe('GalacticAge', () => {
+  let galacticAge;
   beforeEach(() =>{
-    userAge = new UserAge(28);
+    galacticAge= new GalacticAge(28);
   });
 
   test('it should return an object with an inputted age in earth years & days',() => {
-    expect(userAge.years).toEqual(28);
-    expect(userAge.days).toEqual(10220);
+    expect(galacticAge.earthYears).toEqual(28);
+    expect(galacticAge.earthDays).toEqual(10220);
   });
 
   test('it should return the inputted age', ()=>{
-    expect(userAge.displayEarthAge(userAge.years)).toEqual(28);
+    expect(galacticAge.displayEarthAge(galacticAge.years)).toEqual(28);
   });
 
   test('it should return the future inputted age in earth years', ()=>{
-    userAge.futureYears(50);
-    expect(userAge.futureAge).toEqual(50);
+    galacticAge.toFutureAge(50);
+    expect(galacticAge.futureEarthAge).toEqual(50);
   });
 
   test('it should return the years between futureAge and userAge', ()=>{
-    userAge.futureYears(50);
-    expect(userAge.nextBirthday()).toEqual(22);
+    galacticAge.toFutureAge(50);
+    expect(galacticAge.nextEarthBirthday()).toEqual(22);
   });
 
 });

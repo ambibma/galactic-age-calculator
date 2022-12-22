@@ -1,18 +1,18 @@
 
-export default class UserAge {
+export default class galacticAge {
   constructor(age){
-  this.years = age;
-  this.days = age * 365;
+  this.earthYears = age;
+  this.earthDays = age * 365;
   }
   displayEarthAge() {
-    return this.years;
+    return this.earthYears;
   }
-  futureYears(futureAge) {
-    this.futureAge = futureAge;
+  toFutureAge(futureAge) {
+    this.futureEarthAge = futureAge;
     return futureAge
   }
-  nextBirthday(){
-    return this.futureAge - this.years;
+  nextEarthBirthday(){
+    return this.futureEarthAge - this.earthYears;
   }
   
 }
