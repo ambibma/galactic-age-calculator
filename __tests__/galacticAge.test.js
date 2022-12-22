@@ -27,7 +27,7 @@ describe('GalacticAge', () => {
   });
 
   test('it should return the inputted years from Earth to Mercury years', ()=>{
-    expect(galacticAge.toMercuryAge()).toEqual(116.6);
+    expect(galacticAge.toMercuryAge()).toEqual(116.7);
   });
 
 
