@@ -27,8 +27,7 @@ describe('GalacticAge', () => {
   });
 
   test('it should return the years between past inputted birthday', () =>{
-    galacticAge.pastEarthBirthday(25);
-    expect(galacticAge.pastEarthAge).toEqual(3);
+    expect(galacticAge.pastEarthBirthday(25)).toEqual(3);
   });
 
   test('it should return the inputted years from Earth to Mercury years', ()=>{

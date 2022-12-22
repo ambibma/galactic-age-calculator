@@ -14,8 +14,9 @@ export default class galacticAge {
   nextEarthBirthday(){
     return this.futureEarthAge - this.earthYears;
   }
-  pastEarthBirthday(){
-
+  pastEarthBirthday(pastAge){
+    this.pastEarthAge = pastAge;
+    return  this.earthYears - this.pastEarthAge;
   }
   toMercuryAge(){
     this.mercuryYears = parseFloat(((this.earthYears/ .24)).toFixed(1));
