@@ -20,10 +20,11 @@ describe('UserAge', () => {
     userAge.futureYears(50);
     expect(userAge.futureAge).toEqual(50);
   });
-  
-  // test('it should return the amount of Earth years until next birthday calulated from userAge.years', ()=>{
-  //   let futureAge = new FutureAge(50);
-  //   let userAge = new UserAge(28);
-  //   expect(futureAge.nextBirthday(userAge.years)).toEqual(22);
-  // });
+
+  test('it should return the years between futureAge and userAge', ()=>{
+    userAge.futureYears(50);
+
+    expect(userAge.nextBirthday).toEqual(22);
+  })
+
 });
