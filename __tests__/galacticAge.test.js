@@ -31,7 +31,8 @@ describe('GalacticAge', () => {
   });
 
   test('it should return the inputted user age from days to Mercury days' , () =>{
-    expect(galacticAge.toMercuryAge())
+    galacticAge.toMercuryAge(28)
+    expect(galacticAge.mercuryDays).toEqual(116.23)
   })
 
 
