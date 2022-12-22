@@ -15,8 +15,8 @@ export default class galacticAge {
     return this.futureEarthAge - this.earthYears;
   }
   toMercuryAge(){
-    this.mercuryYears = this.earthYears/ .24;
-    return parseFloat(this.mercuryYears.toFixed(1));
+    this.mercuryYears = parseFloat(((this.earthYears/ .24)).toFixed(1));
+    this.mercuryDays = parseFloat((this.mercuryYears * 1.5).toFixed(1));
   }
 }
 // class FutureAge extends UserAge{

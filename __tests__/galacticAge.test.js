@@ -27,13 +27,14 @@ describe('GalacticAge', () => {
   });
 
   test('it should return the inputted years from Earth to Mercury years', ()=>{
-    expect(galacticAge.toMercuryAge()).toEqual(116.7);
+    galacticAge.toMercuryAge()
+    expect(galacticAge.mercuryYears).toEqual(116.7);
   });
 
   test('it should return the inputted user age from days to Mercury days' , () =>{
-    galacticAge.toMercuryAge(28)
-    expect(galacticAge.mercuryDays).toEqual(116.23)
-  })
+    galacticAge.toMercuryAge();
+    expect(galacticAge.mercuryDays).toEqual(175.1);
+  });
 
 
 });
