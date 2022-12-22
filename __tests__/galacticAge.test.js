@@ -30,5 +30,9 @@ describe('GalacticAge', () => {
     expect(galacticAge.toMercuryAge()).toEqual(116.7);
   });
 
+  test('it should return the inputted user age from days to Mercury days' , () =>{
+    expect(galacticAge.toMercuryAge())
+  })
+
 
 });
