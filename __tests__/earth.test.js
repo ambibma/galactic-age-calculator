@@ -1,5 +1,5 @@
 
-import {UserAge, FutureAge } from "../src/earth";
+import {UserAge} from "../src/earth";
 
 describe('UserAge', () => {
   let userAge;
@@ -16,16 +16,14 @@ describe('UserAge', () => {
     expect(userAge.displayEarthAge(userAge.years)).toEqual(28);
   });
 
-});
-describe('FutureAge', () =>{  
   test('it should return the future inputted age in earth years', ()=>{
-    let futureAge = new FutureAge(50);
-    expect(futureAge.futureYears).toEqual(50);
+    
+    expect(userAge.futureYears(50)).toEqual(50);
   });
   
-  test('it should return the amount of Earth years until next birthday calulated from userAge.years', ()=>{
-    let futureAge = new FutureAge(50);
-    let userAge = new UserAge(28);
-    expect(futureAge.nextBirthday(userAge.years)).toEqual(22);
-  });
-})
+  // test('it should return the amount of Earth years until next birthday calulated from userAge.years', ()=>{
+  //   let futureAge = new FutureAge(50);
+  //   let userAge = new UserAge(28);
+  //   expect(futureAge.nextBirthday(userAge.years)).toEqual(22);
+  // });
+});
