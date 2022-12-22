@@ -14,7 +14,9 @@ export default class galacticAge {
   nextEarthBirthday(){
     return this.futureEarthAge - this.earthYears;
   }
+  toMercuryAge(){
   
+  }
 }
 // class FutureAge extends UserAge{
 //   constructor(age){

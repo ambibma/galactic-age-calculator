@@ -1,5 +1,5 @@
 
-import GalacticAge from "../src/earth";
+import GalacticAge from "../src/galacticAge";
 
 describe('GalacticAge', () => {
   let galacticAge;
@@ -25,5 +25,10 @@ describe('GalacticAge', () => {
     galacticAge.toFutureAge(50);
     expect(galacticAge.nextEarthBirthday()).toEqual(22);
   });
+
+  test('it should return the inputted years from Earth to Mercury years', ()=>{
+    expect(galacticAge.toMercuryAge()).toEqual(116.6);
+  });
+
 
 });
