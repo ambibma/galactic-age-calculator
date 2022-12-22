@@ -9,9 +9,10 @@ export default class UserAge {
   }
   futureYears(futureAge) {
     this.futureAge = futureAge;
+    return futureAge
   }
   nextBirthday(){
-    return this.futureAge - this.age;
+    return this.futureAge - this.years;
   }
   
 }
