@@ -39,9 +39,12 @@ describe('GalacticAge', () => {
     galacticAge.toMercuryAge();
     expect(galacticAge.mercuryDays).toEqual(175.1);
   });
-  // test('it should return the inputted user age from Earth years to Venus Years' , () =>{
-  //   expect(galacticAge.venusYears).toEqual();
-  // });
+
+  test('it should return the inputted years from Earth to Mercury years until next Mercury birthday', ()=>{
+    galacticAge.toMercuryAge()
+    expect(galacticAge.mercuryYears).toEqual(116.7);
+  });
+  
 
 
 
