@@ -1,5 +1,5 @@
 
-import {UserAge} from "../src/earth";
+import UserAge from "../src/earth";
 
 describe('UserAge', () => {
   let userAge;
@@ -17,8 +17,8 @@ describe('UserAge', () => {
   });
 
   test('it should return the future inputted age in earth years', ()=>{
-    
-    expect(userAge.futureYears(50)).toEqual(50);
+    userAge.futureYears(50);
+    expect(userAge.futureAge).toEqual(50);
   });
   
   // test('it should return the amount of Earth years until next birthday calulated from userAge.years', ()=>{

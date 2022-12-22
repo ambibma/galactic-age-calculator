@@ -8,7 +8,7 @@ export default class UserAge {
     return this.years;
   }
   futureYears(futureAge) {
-
+    this.futureAge = futureAge;
   }
   
 }
