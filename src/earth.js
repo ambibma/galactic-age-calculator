@@ -11,7 +11,7 @@ export default class UserAge {
     this.futureAge = futureAge;
   }
   nextBirthday(){
-    return this.futureAge - this.age
+    return this.futureAge - this.age;
   }
   
 }

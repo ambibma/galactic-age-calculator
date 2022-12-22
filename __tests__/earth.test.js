@@ -23,8 +23,7 @@ describe('UserAge', () => {
 
   test('it should return the years between futureAge and userAge', ()=>{
     userAge.futureYears(50);
-
-    expect(userAge.nextBirthday).toEqual(22);
+    expect(userAge.nextBirthday()).toEqual(22);
   })
 
 });
