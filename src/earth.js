@@ -14,4 +14,7 @@ class FutureAge {
   this.futureYears = futureAge;
   this.futureDays = futureAge* 365;  
   }
+  nextBirthday(){
+  
+  }
 }
