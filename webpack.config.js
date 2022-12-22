@@ -8,6 +8,7 @@ module.exports = {
     	filename: 'bundle.js',
    	 path: path.resolve(__dirname, 'dist')
  	 },
+   devtool: 'eval-source-map',
    plugins:[
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
@@ -16,5 +17,6 @@ module.exports = {
     inject: 'body'
    
    })
-  ],	
+  ],
+  	
   };
