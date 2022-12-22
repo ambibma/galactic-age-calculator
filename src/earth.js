@@ -4,4 +4,7 @@ export default class UserAge {
   this.years = age;
   this.days = age * 365;
   }
+  displayEarthAge() {
+    
+  }
 }
