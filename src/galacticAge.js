@@ -34,6 +34,9 @@ export default class GalacticAge {
   nextVenusBirthday(){
     return parseFloat(((this.futureEarthAge/.62) - (this.earthYears/.62)).toFixed(1));
   }
+  pastVenusBirthday(){
+    
+  }
  
 }
 // class FutureAge extends UserAge{
