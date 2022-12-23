@@ -22,6 +22,10 @@ export default class galacticAge {
     this.mercuryYears = parseFloat(((this.earthYears/ .24)).toFixed(1));
     this.mercuryDays = parseFloat((this.mercuryYears * 1.5).toFixed(1));
   }
+  nextMercuryBirthday(){
+    
+  }
+
   // toVenusAge(){
     
   // }
