@@ -71,5 +71,8 @@ describe('GalacticAge', () => {
   test("it should return the years that have passed on Mars since an inputted past Earth Age", () =>{
     expect(galacticAge.pastMarsBirthday()).toEqual(1.6);
 });
+  test('it should return the inputted years from Earth to Jupiter Years', () =>{
+    expect(galacticAge.toJupiterYears()).toEqual(2.4);
+  })
 
 });
