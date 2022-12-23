@@ -67,12 +67,15 @@ describe('GalacticAge', () => {
   
   test('it should return the inputted future Earth years on Mars until next Mars birthday', () =>{
     expect(galacticAge.nextMarsBirthday()).toEqual(11.7)
-});
+  });
   test("it should return the years that have passed on Mars since an inputted past Earth Age", () =>{
     expect(galacticAge.pastMarsBirthday()).toEqual(1.6);
-});
+  });
   test('it should return the inputted years from Earth to Jupiter Years', () =>{
     expect(galacticAge.toJupiterYears()).toEqual(2.4);
-  })
+  });
+  test("it should return the years that have yet to pass on Jupiter since an inputted future Earth Age", () =>{
+    expect(galacticAge.nextJupiterBirthday()).toEqual(1.9);
+  });
 
 });
