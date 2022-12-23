@@ -27,7 +27,7 @@ export default class galacticAge {
     return parseFloat((((this.futureEarthAge /.24) - (this.earthYears / .24))).toFixed(1));
   }
   pastMercuryBirthday(){
-    
+    return parseFloat((((this.earthYears-this.pastEarthAge)/ .24)).toFixed(1));
   }
 
   // toVenusAge(){
