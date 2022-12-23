@@ -21,6 +21,7 @@ export default class GalacticAge {
   toMercuryAge(){
     this.mercuryYears = parseFloat(((this.earthYears/ .24)).toFixed(1));
     this.mercuryDays = parseFloat((this.mercuryYears * 1.5).toFixed(1));
+    return this.mercuryYears;
   }
   nextMercuryBirthday(){
     return parseFloat((((this.futureEarthAge /.24) - (this.earthYears / .24))).toFixed(1));
@@ -44,7 +45,7 @@ export default class GalacticAge {
     return parseFloat(((this.futureEarthAge / 1.88) - (this.earthYears / 1.88)).toFixed(1));
   }
   pastMarsBirthday(){
-    
+    return parseFloat(((this.earthYears - this.pastEarthAge)/1.88).toFixed(1));
   }
 }
 // class FutureAge extends UserAge{
