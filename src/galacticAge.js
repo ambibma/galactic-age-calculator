@@ -1,16 +1,15 @@
-import { parse } from "@babel/core";
 
-export default class galacticAge {
+export default class GalacticAge {
   constructor(age){
-  this.earthYears = age;
-  this.earthDays = age * 365;
+    this.earthYears = age;
+    this.earthDays = age * 365;
   }
   displayEarthAge() {
     return this.earthYears;
   }
   toFutureAge(futureAge) {
     this.futureEarthAge = futureAge;
-    return futureAge
+    return futureAge;
   }
   nextEarthBirthday(){
     return this.futureEarthAge - this.earthYears;
@@ -30,12 +29,9 @@ export default class galacticAge {
     return parseFloat((((this.earthYears-this.pastEarthAge)/ .24)).toFixed(1));
   }
   toVenusAge(){
-
+    return this.venusYears = parseFloat(((this.earthYears / .62)).toFixed(1));
   }
-
-  // toVenusAge(){
-    
-  // }
+ 
 }
 // class FutureAge extends UserAge{
 //   constructor(age){
