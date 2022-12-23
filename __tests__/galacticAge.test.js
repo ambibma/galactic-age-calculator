@@ -77,5 +77,9 @@ describe('GalacticAge', () => {
   test("it should return the years that have yet to pass on Jupiter since an inputted future Earth Age", () =>{
     expect(galacticAge.nextJupiterBirthday()).toEqual(1.9);
   });
+  test("it should return the years that have passed on Jupiter since an inputted past Earth Age", () =>{
+    expect(galacticAge.pastJupiterBirthday()).toEqual(0.3)
+  });
+
 
 });

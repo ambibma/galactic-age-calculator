@@ -53,6 +53,9 @@ export default class GalacticAge {
   nextJupiterBirthday(){
     return parseFloat(((this.futureEarthAge - this.earthYears)/11.86).toFixed(1));
   }
+  pastJupiterBirthday(){
+    
+  }
 }
 // class FutureAge extends UserAge{
 //   constructor(age){
