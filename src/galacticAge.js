@@ -32,12 +32,14 @@ export default class GalacticAge {
     return this.venusYears = parseFloat(((this.earthYears / .62)).toFixed(1));
   }
   nextVenusBirthday(){
-    return parseFloat(((this.futureEarthAge/.62) - (this.earthYears/.62)).toFixed(1));
+    return parseFloat(((this.futureEarthAge /.62) - (this.earthYears/ .62)).toFixed(1));
   }
   pastVenusBirthday(){
     return parseFloat(((this.earthYears - this.pastEarthAge)/.62).toFixed(1));
   }
- 
+  toMarsYears(){
+    
+  }
 }
 // class FutureAge extends UserAge{
 //   constructor(age){
