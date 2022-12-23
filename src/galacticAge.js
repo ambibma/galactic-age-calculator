@@ -57,12 +57,3 @@ export default class GalacticAge {
     return parseFloat(((this.earthYears - this.pastEarthAge)/11.86).toFixed(1));
   }
 }
-// class FutureAge extends UserAge{
-//   constructor(age){
-//   super(this.futureYears = futureAge;
-//   this.futureDays = futureAge* 365;  
-//   }
-//   nextBirthday(){
-//   return this.futureYears - userAge.years;
-//   }
-// }
