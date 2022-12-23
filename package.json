@@ -20,6 +20,7 @@
     "eslint-webpack-plugin": "^2.7.0",
     "html-webpack-plugin": "^4.5.2",
     "jest": "^24.9.0",
+    "webpack": "4.46.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "3.11.3"
   }
