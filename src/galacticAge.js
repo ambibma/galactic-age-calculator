@@ -43,6 +43,9 @@ export default class GalacticAge {
   nextMarsBirthday(){
     return parseFloat(((this.futureEarthAge / 1.88) - (this.earthYears / 1.88)).toFixed(1));
   }
+  pastMarsBirthday(){
+    
+  }
 }
 // class FutureAge extends UserAge{
 //   constructor(age){

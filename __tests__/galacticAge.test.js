@@ -68,5 +68,8 @@ describe('GalacticAge', () => {
   test('it should return the inputted future Earth years on Mars until next Mars birthday', () =>{
     expect(galacticAge.nextMarsBirthday()).toEqual(11.7)
 });
+  test("it should return the years that have passed on Mars since an inputted past Earth Age", () =>{
+    expect(galacticAge.pastMarsBirthday()).toEqual(1.6);
+});
 
 });
