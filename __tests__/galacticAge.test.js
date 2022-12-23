@@ -5,6 +5,8 @@ describe('GalacticAge', () => {
   let galacticAge;
   beforeEach(() =>{
     galacticAge= new GalacticAge(28);
+    galacticAge.toFutureAge(50);
+    galacticAge.pastEarthBirthday(25);
   });
 
   test('it should return an object with an inputted age in earth years & days',() => {
@@ -17,12 +19,10 @@ describe('GalacticAge', () => {
   });
 
   test('it should return the future inputted age in earth years', ()=>{
-    galacticAge.toFutureAge(50);
     expect(galacticAge.futureEarthAge).toEqual(50);
   });
 
   test('it should return the years between futureAge and userAge', ()=>{
-    galacticAge.toFutureAge(50);
     expect(galacticAge.nextEarthBirthday()).toEqual(22);
   });
 
@@ -40,9 +40,13 @@ describe('GalacticAge', () => {
     expect(galacticAge.mercuryDays).toEqual(175.1);
   });
 
-  test('it should return the inputted future years from Earth on Mercury until next Mercury birthday', ()=>{
-    galacticAge.toFutureAge(50)
+  test('it should return the inputted future Earth years on Mercury until next Mercury birthday', ()=>{
+
     expect(galacticAge.nextMercuryBirthday()).toEqual(91.7);
+  });
+
+  test('it should return the years that have passed on Mercury since an inputted past Earth age', () =>{
+    expect(galacticAge.pastMercuryBirthday()).toEqual(12.5);
   });
   
 
