@@ -30,6 +30,7 @@ html{
 .ageFormCenter {
   margin: auto;
   text-align: center;
+  padding: 20px;
 }
 
 .hidden {
