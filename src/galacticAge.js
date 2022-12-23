@@ -1,3 +1,4 @@
+import { parse } from "@babel/core";
 
 export default class galacticAge {
   constructor(age){
@@ -23,7 +24,7 @@ export default class galacticAge {
     this.mercuryDays = parseFloat((this.mercuryYears * 1.5).toFixed(1));
   }
   nextMercuryBirthday(){
-    
+    return parseFloat((((this.futureEarthAge /.24) - (this.earthYears / .24))).toFixed(1));
   }
 
   // toVenusAge(){

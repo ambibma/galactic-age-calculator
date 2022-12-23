@@ -42,7 +42,7 @@ describe('GalacticAge', () => {
 
   test('it should return the inputted future years from Earth on Mercury until next Mercury birthday', ()=>{
     galacticAge.toFutureAge(50)
-    expect(galacticAge.nextMercuryBirthday()).toEqual(91.6);
+    expect(galacticAge.nextMercuryBirthday()).toEqual(91.7);
   });
   
 
