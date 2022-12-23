@@ -48,6 +48,10 @@ describe('GalacticAge', () => {
   test('it should return the years that have passed on Mercury since an inputted past Earth age', () =>{
     expect(galacticAge.pastMercuryBirthday()).toEqual(12.5);
   });
+
+  test('it should return the inputted years from Earth on Venus ', () =>{
+    expect(galacticAge.toVenusAge()).toEqual(45.2);
+  })
   
 
 
