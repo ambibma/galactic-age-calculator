@@ -53,6 +53,9 @@ describe('GalacticAge', () => {
     expect(galacticAge.toVenusAge()).toEqual(45.2);
   })
   
+  test('it should return the inputted future Earth years on Venus until next Venus birthday', () =>{
+    expect(galacticAge.nextVenusBirthday().toEqual(35.5))
+  });
 
 
 
