@@ -1,13 +1,43 @@
-1. determine user's age in Earth Years.
-1 Earth year = 365 days on earth
-1 Earth Year = 87.6 days/yr Mecury
-1 Earth year = 226.3 days/Eyr Venus
-1 Earth year = 686.19 days/earthYear Mars
-1 earth year = 4328.9 days/earthYear Jupiter
 
-// 365 = Mdays
+# Galactic Age Calculator
+---
+#### By Ambi Hidalgo 
+###### ambio.pk@gmail.com
+###### Background by Bryan Goff  
+https://www.instagram.com/bryangoffphoto/
 
-Returns their age in Mercury years. (A Mercury year is .24 Earth years.)
-Returns their age in Venus years. (A Venus year is .62 Earth years.)
-Returns their age in Mars years. (A Mars year is 1.88 Earth years.)
-Returns their age in Jupiter years. (A Jupiter year is 11.86 Earth years.)
+---
+
+####  Galactic Age Calculator
+Galactic Age Calculator is a student-designed web application that showcases learned skills of of Test Driven Development, node package manager, bundling with webpack and testing with Jest. Using step-by-step best testing practices, Galactic Age Calculator returns the user with their age on other planets; past,present and future. 
+
+## Technologies Used
+* Node
+* npm
+* Webpack
+* Jest
+* Babel
+* EsLint
+* Javascript
+* CSS
+* HTML
+
+## Setup/Installation Requirements
+
+* Clone this repository (https://github.com/ambibma/galactic-age-calculator)
+* using terminal or gitbash navigate to galactic-age-calculator repository file
+* Once in the repo file 
+```
+    $ npm install
+    $ npm run build
+    $ npm run start
+```
+## Known Bugs
+
+* No known bugs at the moment
+send bug concerns to ambi.pk@gmail.com
+
+## License
+
+
+Copyright (c) Ambi Hidalgo 2022
