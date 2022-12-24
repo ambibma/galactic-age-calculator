@@ -12,7 +12,7 @@ function handleFormSubmit(event){
   console.log(futureAge);
   console.log(pastAge);
   console.log(galacticAge)
-    if(age >= pastAge && age <= futureAge){
+    if(age > pastAge && age < futureAge){
       warning.classList.add('hidden');
       let resultsPast = document.getElementById('pastResults');
       let resultsPresent = document.getElementById('presentResults');
