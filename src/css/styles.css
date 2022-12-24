@@ -1,6 +1,6 @@
 html{
   background-image: url('../assets/images/background.jpg');
-  
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -28,7 +28,7 @@ html{
 .box {
   width: 250px;
   height: 250px;
-  background-color: rgba(97, 154, 228, 0.739);
+  background-color: rgba(96, 160, 170, 0.724);
   margin: 10px;
   padding: 20px;
 }
@@ -37,6 +37,7 @@ html{
   margin: auto;
   text-align: center;
   padding: 20px;
+  flex: 1;
 }
 
 .hidden {
