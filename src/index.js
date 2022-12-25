@@ -8,10 +8,6 @@ function handleFormSubmit(event){
   let pastAge = document.getElementById('pastAge').value;
   let warning = document.getElementById("warning");
   let galacticAge = new GalacticAge(); 
-  console.log(age);
-  console.log(futureAge);
-  console.log(pastAge);
-  console.log(galacticAge)
     if(age > pastAge && age < futureAge){
       warning.classList.add('hidden');
       let resultsPast = document.getElementById('pastResults');
@@ -35,9 +31,15 @@ function handleFormSubmit(event){
       const venusFuture = document.getElementById('venusFuture');
       const marsFuture = document.getElementById('marsFuture');
       const jupiterFuture = document.getElementById('jupiterFuture');
+      const inputtedPastAge = document.getElementById('inputtedPastAge')
+      const inputtedPresentAge = document.getElementById('inputtedPresentAge');
+      const inputtedFutureAge = document.getElementById('inputtedFutureAge');
       galacticAge.earthYears = age;
       galacticAge.pastEarthAge = pastAge;
       galacticAge.futureEarthAge = futureAge;
+      inputtedPastAge.innerText = galacticAge.pastEarthAge; 
+      inputtedPresentAge.innerText = galacticAge.earthYears; 
+      inputtedFutureAge.innerText = galacticAge.futureEarthAge;
       earthPast.innerText = galacticAge.pastEarthBirthday(pastAge);
       mercuryPast.innerText = galacticAge.pastMercuryBirthday();
       venusPast.innerText = galacticAge.pastVenusBirthday();
