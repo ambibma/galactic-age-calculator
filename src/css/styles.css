@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Mada&family=Mukta&family=Prompt&display=swap');
 html{
   background-image: url('../assets/images/background.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: black;
+  color: white;
 }
 h1 {
   text-align: center;
 }
-html{
-  background-color: black;
-  color: white;
+body{
+  font-family: 'Mada', sans-serif;
 }
 .container {
   display: flex;
@@ -38,6 +40,38 @@ html{
   text-align: center;
   padding: 20px;
   flex: 1;
+}
+
+#warning{
+  color: rgb(255, 62, 62);
+  font-weight: bolder;
+  font-size:large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(132, 120, 120);
+}
+
+#inputtedPresentAge{
+  font-weight:bolder;
+  text-shadow: 250px;
+  font-weight: 900;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#inputtedPastAge{
+  font-weight:bolder;
+  text-shadow: 250px;
+  font-weight: 900;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#inputtedFutureAge{
+    font-weight:bolder;
+    text-shadow: 250px;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    
 }
 
 .hidden {
